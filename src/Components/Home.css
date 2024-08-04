@@ -1,0 +1,253 @@
+.banner {
+  background: linear-gradient(#002629db, #002629),
+    url(../assets/banner2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  position: relative;
+
+  button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background: #00b04d !important;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .btn1 {
+    position: absolute;
+    left: 30px;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  h5,
+  p {
+    font-size: 20px;
+  }
+
+  .img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+  }
+  .text {
+    height: 90%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 30px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #6a3c28;
+}
+.link.active {
+  background: #6a3c28 !important;
+  color: white;
+  padding: 5px 20px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  height: 13vh;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 4px gray;
+  color: white !important;
+
+  ul {
+    display: flex;
+    gap: 100px;
+
+    li {
+      list-style: none;
+      font-size: 20px;
+      color: #fff !important;
+
+      link {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+/* ABOUT Styles */
+
+.about {
+  position: relative;
+  .image {
+    position: absolute;
+    top: 50vh;
+    left: 2vw;
+    border: 5px solid white;
+    border-radius: 20px;
+  }
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.animate-up-down {
+  animation: moveUpDown 3s infinite;
+  background: url(../assets/img/about_2-2.webp);
+  height: 35vh;
+  width: 44vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.line {
+  width: 15px;
+  height: 60vh;
+  background-color: #00b150;
+  position: absolute;
+  left: 6vw;
+}
+.cont {
+  display: flex;
+  justify-content: center;
+}
+.col-md-2 {
+  background: red !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.leaves {
+  width: 80px;
+  height: auto;
+  position: absolute;
+}
+
+.leave1 {
+  animation: moveUpDown1 4s ease-in-out infinite;
+  top: -50px;
+  right: 0;
+}
+
+.leave2 {
+  animation: moveUpDown2 4s ease-in-out infinite;
+  top: 40%;
+  right: 0px;
+}
+
+.leave3 {
+  animation: moveUpDown3 4s ease-in-out infinite;
+  top: 70%;
+}
+
+@keyframes moveUpDown1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveUpDown2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveUpDown3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* SERVICES SECTION */
+
+.services {
+  background: #f9f7ee;
+  .container1 {
+    display: flex;
+    gap: 30px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+  .container {
+    text-align: center;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    .green1 {
+      color: #00b150;
+    }
+    h1 {
+      width: 40%;
+    }
+    .card {
+      border: none;
+      width: 90%;
+      padding: 40px 0px;
+      box-shadow: 1px 2px 20px;
+      border-bottom: 4px solid #00b04d;
+      border-radius: 0px;
+      position: absolute;
+      bottom: -90px;
+    }
+    .card-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 3;
+      position: relative;
+    }
+  }
+}
