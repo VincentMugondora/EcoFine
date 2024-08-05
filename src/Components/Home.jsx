@@ -19,6 +19,8 @@ import Icon3 from "../assets/img/eco-bag.png";
 import Icon4 from "../assets/img/earth.png";
 import LatestProjects from "./Home/LatestProjects";
 import Steps from "./Home/Steps";
+import Questions from "./Home/Questions";
+import Team from "./Home/Team";
 
 const Home = () => {
   const cards = [
@@ -66,7 +68,7 @@ const Home = () => {
               <img className="float-right" src={AboutImg} alt="img" />
               <div className="dotted-rectangle"></div>
               <div className="float-left animate-up-down image">
-                <a href="https://youtu.be/yfFYBo0jtF0">
+                <a href="https://youtu.be/yfFYBo0jtF0" target="_blank">
                   <box-icon
                     name="play-circle"
                     animation="tada"
@@ -216,7 +218,9 @@ const Home = () => {
       </section>
       <section>
         <Steps />
+        <Questions />
       </section>
+      <Team />
     </div>
   );
 };
