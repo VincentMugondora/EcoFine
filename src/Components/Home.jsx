@@ -9,10 +9,16 @@ import Leaf3 from "../assets/img/fresh-green-leaves-with-water-drops.png";
 import Service1 from "../assets/img/service_4-1.webp";
 import Service2 from "../assets/img/service_4-2.webp";
 import Service3 from "../assets/img/service_4-3.webp";
-import Sustain from "../assets/img/1-1.webp"
-import Sustain2 from "../assets/img/1-2.webp"
-import Sustain3 from "../assets/img/1-3.webp"
-import Sustain4 from "../assets/img/1-4.webp"
+import Sustain from "../assets/img/1-1.webp";
+import Sustain2 from "../assets/img/1-2.webp";
+import Sustain3 from "../assets/img/1-3.webp";
+import Sustain4 from "../assets/img/1-4.webp";
+import Icon from "../assets/img/earth-day.png";
+import Icon2 from "../assets/img/eco-home.png";
+import Icon3 from "../assets/img/eco-bag.png";
+import Icon4 from "../assets/img/earth.png";
+import LatestProjects from "./Home/LatestProjects";
+import Steps from "./Home/Steps";
 
 const Home = () => {
   const cards = [
@@ -20,8 +26,13 @@ const Home = () => {
     { image: Service2, heading: "Service 02", text: "E-Waste Recycling" },
     { image: Service3, heading: "Service 03", text: "Water Conservation" },
   ];
-   
-  const cardsTwo = [{icon:}]
+
+  const cardsTwo = [
+    { icon: Icon, num: "200+", text: "Team member" },
+    { icon: Icon4, num: "10k+", text: "Complete project" },
+    { icon: Icon2, num: "20+", text: "Winning award" },
+    { icon: Icon3, num: "900+", text: "Client review" },
+  ];
 
   return (
     <div className="cont">
@@ -151,7 +162,7 @@ const Home = () => {
 
       {/* SUPPORT */}
       <section className="support">
-        <div className="container bg-[#00b04d] rounded-md flex items-center justify-evenly p-12">
+        <div className="container bg-[#00b04d] rounded-md flex items-center justify-evenly pb-16 pt-16">
           <img src={Sustain} alt="img" />
           <img src={Sustain2} alt="img" />
           <img src={Sustain3} alt="img" />
@@ -160,16 +171,51 @@ const Home = () => {
       </section>
 
       {/* SUSTAIN SECTION */}
-      <section className="sustain bg-[#00b04d] pb-20 pt-20 text-white">
-        <div className="container">
-          <h2 className="title green1">Go green and reduce your carbon</h2>
-          <div className="flex justify-between align-bottom">
-            <h2>footprint</h2>
-            <button className="border-2 border-white rounded w-52 h-12 text-white">
-              Send Message
-            </button>
+      <section className="sustain  pb-20 pt-20 text-white relative">
+        <div className="bg-[#00b04d] h-72 flex flex-col justify-center">
+          <div className="container">
+            <h2 className="title green1">Go green and reduce your carbon</h2>
+            <div className="flex justify-between align-bottom">
+              <h2>footprint</h2>
+              <button className="border-2 border-white rounded w-52 h-12 text-white">
+                Send Message
+              </button>
+            </div>
           </div>
         </div>
+        <div className="flex justify-between container mt-[-70px]">
+          {cardsTwo.map((card) => (
+            <div
+              className="card-cont bg-white flex flex-col items-center justify-center pt-16 pb-16 p-10 text-black rounded shadow"
+              key={Math.random()}
+            >
+              <img
+                className="w-10 transition-transform duration-500 ease-in-out flip-hover"
+                src={card.icon}
+                alt="icon"
+              />
+              <h2>{card.num}</h2>
+              <h4>{card.text}</h4>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section className="projects">
+        <div className="container">
+          <h4 className="text-[#00b04d]">LATEST PROJECT</h4>
+          <div className="flex justify-between">
+            <h1 className="w-[40%]">Green thinking for better world</h1>
+            <button className="bg-[#00b04d] w-52 text-white rounded h-16">
+              Our Latest Projects
+            </button>
+          </div>
+          <LatestProjects />
+        </div>
+      </section>
+      <section>
+        <Steps />
       </section>
     </div>
   );

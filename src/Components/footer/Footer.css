@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background: #24231D;
+    width: 100%;
+    padding: 30px;
+    height: 100vh;
+}
+

@@ -5,6 +5,7 @@ import Post from "./Components/Post"
 import Blog from "./Components/Blog"
 import "boxicons";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Footer from "./Components/footer/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path="/Post" element={<Post />} />
         <Route exact path="/Blog:postId" element={<Blog />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

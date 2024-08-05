@@ -251,3 +251,9 @@ nav {
     }
   }
 }
+
+.card-cont:hover{
+ .flip-hover {
+      transform: rotateY(180deg);
+    }
+}
