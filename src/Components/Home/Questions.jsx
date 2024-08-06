@@ -3,10 +3,10 @@ import ToggleTextDiv from "./Toggle";
 
 const Questions = () => {
   return (
-    <div className="bg-[#F8F7F0] h-[90vh] w-[100%] questions">
+    <div className="bg-[#F8F7F0] h-[100vh] w-[100%] questions">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md right w-[100%] h-[90vh]"></div>
+          <div className="col-md right w-[100%] h-[100vh]"></div>
           <div className="col-md">
             <div className="container text-cont p-4">
               <h4 className="text-[#00b150]">ASK SOMETHING</h4>

@@ -68,7 +68,7 @@ const Home = () => {
               <img className="float-right" src={AboutImg} alt="img" />
               <div className="dotted-rectangle"></div>
               <div className="float-left animate-up-down image">
-                <a href="https://youtu.be/yfFYBo0jtF0" target="_blank">
+                <a href="https://youtu.be/RmCH_--xHT8" target="_blank">
                   <box-icon
                     name="play-circle"
                     animation="tada"

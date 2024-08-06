@@ -113,4 +113,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  .cards {
+    transition: 0.5s ease-in-out;
+  }
+
+  .cards:hover {
+    background: #00b150;
+    border: 5px solid #00b150;
+    transition: 0.5s ease-in-out;
+
+    .icons {
+      background: white;
+      color: #00b150;
+    }
+    .icon-hover {
+      color: #00b150;
+    }
+  }
+.icon-hover{
+  color: white;
+}
+.icon-hover:hover {
+  color: #00b150;
+}
 }
