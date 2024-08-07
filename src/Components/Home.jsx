@@ -22,6 +22,7 @@ import Steps from "./Home/Steps";
 import Questions from "./Home/Questions";
 import Team from "./Home/Team";
 import Testimonials from "./Home/Testimonials";
+import Blog from "./Home/Blog";
 
 const Home = () => {
   const cards = [
@@ -223,6 +224,7 @@ const Home = () => {
       </section>
       <Team />
       <Testimonials />
+      <Blog />
     </div>
   );
 };
