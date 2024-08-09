@@ -131,10 +131,58 @@
       color: #00b150;
     }
   }
-.icon-hover{
-  color: white;
+  .icon-hover {
+    color: white;
+  }
+  .icon-hover:hover {
+    color: #00b150;
+  }
 }
-.icon-hover:hover {
-  color: #00b150;
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.carousel-item {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel-item .card {
+  width: 48%;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.overlay {
+  background: linear-gradient(to bottom, #00000000, #000);
+}
+.iconse-hover:hover {
+  background: #00b150;
+  transition: all 0.3s;
+}
+.iconse-hover {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.text-hover:hover {
+  color: #00b150 !important;
+}
+.footer {
+  position: relative;
+
+  .image-cont{
+    background: linear-gradient(#0000009b, #0000008d), url("../../assets/img/f2.jpg");
+    width: 30vw;
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+     position: absolute;
+    width: 30vw;
+    right: 0;
+    bottom: 40vh;
+    z-index: 0;
+  }
 }
