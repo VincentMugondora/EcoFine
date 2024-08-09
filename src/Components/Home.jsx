@@ -40,9 +40,9 @@ const Home = () => {
 
   return (
     <div className="cont">
-      <section className=" banner">
+      <section className="banner">
         <Navbar />
-        <div className="text">
+        <div className="text container">
           <h5 className="text-white text-2xl">Be Natural</h5>
           <h1 className="text-white text-7xl">
             Preserving the earth for future generations
@@ -53,8 +53,8 @@ const Home = () => {
           </p>
           <div className="btn">
             <button className="bg-white pt-[10px] pb-[10px] pl-[60px] pr-[60px] text-[#7A523E] text-[1.2rem] btn1">
-              Discover More{" "}
-              <box-icon name="chevrons-right" color="#ffffff"></box-icon>
+                Discover More
+                <box-icon name="chevrons-right" color="#ffffff"></box-icon>
             </button>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="about container">
+      <section className="about container bg-transparent">
         <div className="row">
           <div className="col-md-6">
             <div className="first relative">

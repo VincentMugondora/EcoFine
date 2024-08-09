@@ -1,0 +1,34 @@
+.about2 {
+  background: linear-gradient(#002629db, #002629),
+    url(../../assets/banner2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.buttons{
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background: #00b04d !important;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+.image-trans{
+    background: url(../../assets//img/about_3-3.webp);
+    animation: moveUpDown3 8s ease-in-out infinite ;
+}
+@keyframes moveUpDown3 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

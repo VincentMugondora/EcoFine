@@ -32,9 +32,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="quote">
-          <button>
-            Get A Quote{" "}
-            <box-icon name="chevrons-right" color="#ffffff"></box-icon>
+          <button className='rounded buttons'>
+              Get A Quote
+              <box-icon name="chevrons-right" color="#ffffff"></box-icon>
           </button>
         </div>
       </nav>
