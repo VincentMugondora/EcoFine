@@ -6,6 +6,7 @@ import Post from "../../assets/img/recent-post1-1.webp";
 import Post2 from "../../assets/img/recent-post1-2.webp";
 import { MdOutlineDateRange } from "react-icons/md";
 import { GrSend } from "react-icons/gr";
+import "./Footer.css";
 
 const Footer = () => {
   const cards = [
@@ -40,7 +41,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="footer w-full relative h-[60vh] bg-[#282723]">
+    <div className="footer w-full relative h-[64vh] bg-[#282723]">
       <section className="container z-10">
         <div className="container p-6 left-24 top-[-12vh] absolute flex bg-[#00b150] z-10 justify-between">
           {cards.map((card) => (
@@ -151,15 +152,18 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="image-cont"></div>
       <div className="text-white">
         <div className="w-full h-[1px] bg-gray-500"></div>
         <div className="container flex justify-between z-10 mt-3">
           <p>© Copyright 2024 Ecofine. All Rights Reserved</p>
           <div className="flex gap-2">
-            <p className="cursor-pointer hover:text-[#00b150]">Privacy Policy</p>
+            <p className="cursor-pointer hover:text-[#00b150]">
+              Privacy Policy
+            </p>
             <div className="w-[1px] h-5 mt-1 bg-gray-500"></div>
-            <p className="cursor-pointer hover:text-[#00b150]">Terms & Conditions</p>
+            <p className="cursor-pointer hover:text-[#00b150]">
+              Terms & Conditions
+            </p>
             <div className="w-[1px] h-5 mt-1 bg-gray-500"></div>
             <p className="cursor-pointer hover:text-[#00b150]">Join Us</p>
           </div>

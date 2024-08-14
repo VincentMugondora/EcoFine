@@ -170,19 +170,4 @@
 .text-hover:hover {
   color: #00b150 !important;
 }
-.footer {
-  position: relative;
 
-  .image-cont{
-    background: linear-gradient(#0000009b, #0000008d), url("../../assets/img/f2.jpg");
-    width: 30vw;
-    height: 20vh;
-    background-size: cover;
-    background-position: center;
-     position: absolute;
-    width: 30vw;
-    right: 0;
-    bottom: 40vh;
-    z-index: 0;
-  }
-}

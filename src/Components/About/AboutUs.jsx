@@ -3,6 +3,7 @@ import AboutImg from "../../assets/img/about_3-1 (1).webp";
 import AboutImg2 from "../../assets/img/about_3-2 (2).webp";
 import { FaCirclePlay } from "react-icons/fa6";
 import { MdOutlineRecycling } from "react-icons/md";
+import { IoEarthOutline } from "react-icons/io5";
 
 const AboutUs = () => {
   return (
@@ -38,14 +39,15 @@ const AboutUs = () => {
               plants.
             </p>
             <div className="flex justify-between ml-4">
-              <div className="bg-[#F8F7F0] rounded-lg p-4">
+              <div className="bg-[#F8F7F0] rotates-cont rounded-lg p-4">
+                <IoEarthOutline className="text-[60px] text-white bg-[#00b04d] rotates rounded p-2" />
                 <h5>Let’s get digital</h5>
                 <p className="w-56 text-[#E0E9E8]">
                   An Environment is everything that is around us
                 </p>
               </div>
-              <div className="bg-[#F8F7F0] rounded-lg p-4">
-                <MdOutlineRecycling className="text-[60px] text-white bg-[#00b04d] p-2" />
+              <div className="bg-[#F8F7F0] rotates-cont rounded-lg p-4">
+                <MdOutlineRecycling className="text-[60px] text-white bg-[#00b04d] rotates rounded p-2" />
                 <h5>Water Pollution</h5>
                 <p className="w-56 text-[#E0E9E8]">
                   An Environment is everything that is around us

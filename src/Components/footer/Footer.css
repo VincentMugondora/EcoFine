@@ -1,12 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.footer{
-    background: #24231D;
-    width: 100%;
-    padding: 30px;
-    height: 100vh;
+.footer {
+  background: #24231d;
+  width: 100%;
+  padding: 30px;
 }
 
