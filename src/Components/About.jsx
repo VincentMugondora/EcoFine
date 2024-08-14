@@ -17,7 +17,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="container">
+      <section className="flex flex-col gap-20">
         <AboutUs />
         <AboutMetrics />
       </section>

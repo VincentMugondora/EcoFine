@@ -4,46 +4,59 @@
   background-size: cover;
   background-position: center;
 }
-.buttons{
-    padding: 15px 40px;
-    border: none;
-    border-radius: 5px;
-    background: #00b04d !important;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-.image-trans{
-    background: url(../../assets//img/about_3-3.webp);
-    animation: moveUpDown3 8s ease-in-out infinite ;
+.buttons {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background: #00b04d !important;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.image-trans {
+  background: url(../../assets//img/about_3-3.webp);
+  animation: moveUpDown3 8s ease-in-out infinite;
 }
 @keyframes moveUpDown3 {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(30px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.rotates{
+.rotates {
   margin-top: -50px;
   transition: all 0.5s ease-in-out;
 }
-.rotates-cont:hover{
-
-  .rotates{
+.rotates-cont:hover {
+  .rotates {
     transform: rotate(360deg) !important;
     border-radius: 50% !important;
     transition: all 0.5s ease-in-out;
   }
 }
-.rotates-cont{
+.rotates-cont {
   transition: all 0.5s ease-in-out;
+}
+.circles:hover {
+  .circle {
+    transform: rotateY(180deg);
+    border-radius: 50% !important;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.imgA{
+  background: url(../../assets/img/recycle.jpg) no-repeat;
+  background-size: cover;
+}
+.textA{
+  margin-left: 40px;
 }

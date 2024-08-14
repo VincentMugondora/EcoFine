@@ -7,7 +7,7 @@ import { IoEarthOutline } from "react-icons/io5";
 
 const AboutUs = () => {
   return (
-    <div className="container mb-96">
+    <div className="container">
       <div className="row">
         <div className="col-md relative">
           <img
@@ -55,7 +55,10 @@ const AboutUs = () => {
               </div>
             </div>
             <div>
-              <button className="buttons ml-4">Read More</button>
+              <button className="buttons ml-4">
+                Read More
+                <box-icon name="chevrons-right" color="#ffffff"></box-icon>
+              </button>
             </div>
           </div>
         </div>

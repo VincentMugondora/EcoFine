@@ -8,4 +8,9 @@
   width: 100%;
   padding: 30px;
 }
-
+.aboutMetrics{
+  background: linear-gradient(#000000c4, #000000ba), url(../../assets/img/sunset.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
