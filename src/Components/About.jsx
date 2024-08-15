@@ -2,6 +2,7 @@ import Navbar from "../Components/Navbar";
 import "../Components/About/About.css";
 import AboutUs from "./About/AboutUs";
 import AboutMetrics from "./About/AboutMetrics";
+import WorkProgress from "./About/WorkProgress";
 
 const About = () => {
   return (
@@ -20,6 +21,7 @@ const About = () => {
       <section className="flex flex-col gap-20">
         <AboutUs />
         <AboutMetrics />
+        <WorkProgress />
       </section>
     </div>
   );

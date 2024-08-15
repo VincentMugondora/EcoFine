@@ -13,7 +13,7 @@ const AboutMetrics = () => {
   ];
 
   return (
-    <div className="aboutMetrics container-fluid w-full h-[90vh] mb-96">
+    <div className="aboutMetrics container-fluid w-full h-[90vh] mb-44">
       <div className="container">
         <div className="metrics flex justify-between mt-[50px]">
           {blogs.map((blog) => (
